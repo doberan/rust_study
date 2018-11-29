@@ -31,8 +31,23 @@ cargoは
 
 ## stdについて
 
-## stdin()
+### stdin()
 入力を受け取る。
 
 ### cmp()
 比較可能な物を比較する。
+
+
+## 出会ったエラー
+
+```
+error[E0423]: expected value, found module `thread`
+  --> src/main.rs:39:9
+   |
+39 |         thread.sleep(Duration::from_millis(1000));
+   |         ^^^^^^-----------------------------------
+   |         |
+   |         did you mean `thread::sleep(...)`?
+```
+
+structの束縛呼び出しをメソッドのように扱うと起きる。
