@@ -1,0 +1,11 @@
+[package]
+name = "embed"
+version = "0.1.0"
+authors = ["doberankei <masayathegantz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[lib]
+name = "embed"
+crate-type = ["lib"]

@@ -51,3 +51,10 @@ error[E0423]: expected value, found module `thread`
 ```
 
 structの束縛呼び出しをメソッドのように扱うと起きる。
+
+
+## その他用語
+### FFI
+
+### GIL
+ ‘global interpreter lock’ (GIL),
